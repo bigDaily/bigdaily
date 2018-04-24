@@ -1,4 +1,4 @@
-#bidDaily
+# bigDaily
 
 A cada dia maior.
 
