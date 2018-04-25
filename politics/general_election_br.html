@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Politics | Brazilian General Elections</title>
+    <title>Firecast: your turn</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css"/>
@@ -95,18 +95,15 @@
       <div class="row aqs-row">
         <div class="col-lg-3 col-lg-offset-2">
           <h3><strong>Brazilian General Elections - 2018</strong></h3>
-          <p>Lula vs Bolsonaro<br></p>
+          <p><i class="fa fa-square w3-text-red"></i> Lula <br> <i class="fa fa-square w3-text-blue"></i> Bolsonaro</p>
         </div>
         <div class="col-lg-5 text-right">
-          <h4><b>f<i class="fa fa-fire"></i>re</b>cast</h4>
+          <h4><b>Last 30 days</b></h4>
         </div>
       </div>
-
-      
-      
-      
+        
       <!-- Project selector -->
-      <div class="row aqs-row">
+      <div class="row aqs-row" style="display:none">
         <div class="col-lg-1 col-lg-offset-2">lang</div>
         <div class="col-lg-7">
           <select class="aqs-project-selector">
@@ -116,7 +113,7 @@
       </div>
 
       <!-- Date range selector -->
-      <div class="row aqs-row">
+      <div class="row aqs-row" style="display:none">
         <div class="col-lg-1 col-lg-offset-2">Range</div>
         <div class="col-lg-7">
           <input class="aqs-date-range-selector">
@@ -124,21 +121,44 @@
       </div> 
 
       <!-- Article selector -->
-      <div class="row aqs-row">
+      <div class="row aqs-row" style="display:none">
         <div class="col-lg-1 col-lg-offset-2">Edit</div>
         <div class="col-lg-7">
           <select class="aqs-article-selector col-lg-12" multiple="multiple"></select>
         </div>
       </div>
-      
-      
-      
 
       <!-- Chart -->
       <div class="col-lg-8 col-lg-offset-2">
         <canvas class="aqs-chart"></canvas>
       </div>
     </div>
+
+<div class="w3-container">
+    <h5>READ REPORTS</h5>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tr>
+        <td><a href="https://google.com" target="_blank">Report 03</a></td>
+        <td>Date: 10/05/2018</td>
+        <td>Status: scheduled</td>
+      </tr>
+      <tr>
+        <td><a href="https://google.com" target="_blank">Report 02</a></td>
+        <td>Date: 03/05/2018</td>
+        <td>Status: scheduled</td>       
+      </tr>
+      <tr>
+        <td><a href="https://google.com" target="_blank">Report 01</td>
+        <td>Date: 26/04/2018</td>
+        <td>Status: scheduled</td>
+      </tr>
+      
+    </table><br>
+ </div>
+
+
+
+
 
     <script>
       var config = {
@@ -343,7 +363,7 @@
             defaults = null;
           }
         } 
-        defaults = defaults || ['Luis Inacio Lula da Silva', 'Jair Bolsonaro'];
+        defaults = defaults || ['Jair Bolsonaro', 'Luiz Inácio Lula da Silva'];
         setArticleSelectorDefaults(defaults);
       });
     </script>
