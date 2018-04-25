@@ -83,11 +83,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <br>
   <!-- BOTÃO -->
  
-    <button class="w3-button w3-dark-grey">Try it yourself!</button>
+    <button id="myButton" class="w3-button w3-dark-grey">Try it yourself!</button>
   </div>
   <hr>
     
-  
   
   
   <!-- Footer -->  
@@ -110,7 +109,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <script>
  
-
+ document.getElementById("myButton").onclick = function () {
+        location.href = "https://bigdaily.github.io/index/custom";
+    };
 <!--- SCRIPT HERE --->
 
 
