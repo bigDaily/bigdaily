@@ -86,15 +86,15 @@
       <div class="row aqs-row">
         <div class="col-lg-3 col-lg-offset-2">
           <h3><strong>Eleições Paraguai 2018</strong></h3>
-          <p><i class="fa fa-square w3-text-blue"></i> Efrain <br> <i class="fa fa-square w3-text-red"></i> Mario</p>
+          
         </div>
         <div class="col-lg-5 text-right">
-          <h4><b>Last 30 days</b></h4>
+          <h4><b>Últimos 30 dias</b></h4>
         </div>
       </div>
         
       <!-- Project selector -->
-      <div class="row aqs-row">
+      <div class="row aqs-row" style="display:none">
         <div class="col-lg-1 col-lg-offset-2">lang</div>
         <div class="col-lg-7">
           <select class="aqs-project-selector">
@@ -104,14 +104,20 @@
       </div>
 
       <!-- Date range selector -->
-      <div class="row aqs-row">
+      <div class="row aqs-row" style="display:none">
         <div class="col-lg-1 col-lg-offset-2">Range</div>
         <div class="col-lg-7">
           <input class="aqs-date-range-selector">
         </div>
       </div> 
 
-      <!-- Article selector -->
+      <!-- Chart -->
+      <div class="col-lg-8 col-lg-offset-2">
+        <canvas class="aqs-chart"></canvas>
+      </div>
+    </div>
+    
+    <!-- Article selector -->
       <div class="row aqs-row">
         <div class="col-lg-1 col-lg-offset-2">Edit</div>
         <div class="col-lg-7">
@@ -119,16 +125,47 @@
         </div>
       </div>
 
-      <!-- Chart -->
-      <div class="col-lg-8 col-lg-offset-2">
-        <canvas class="aqs-chart"></canvas>
-      </div>
+<h2>ELEIÇÕES GERAIS NO PARAGUAI EM 2018</h2>
+<p>As Eleições gerais no Paraguai em 2018 foram realizadas em 22 de abril. 
+Foi o sétimo pleito geral no país desde o golpe de estado que pôs fim à ditadura de Alfredo Stroessner em 
+fevereiro de 1989.<br><br>
+
+Segundo o Tribunal Superior de Justiça Eleitoral (TSJE), 
+o número total de eleitores inscritos e aptos ao voto foi de 4.260.816.</p>    
+    
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align"><i class="fa fa-bolt"></i> PREVISÕES</button>
+<div id="Demo1" class="w3-hide w3-container">
+    <p>  <div class="w3-container">
+      <h3>21/04/2018:<h3>
+      <b5>Resultado previsto</h5>
+      <br>
+    <p>MARIO ABDO BENÍTEZ</p>
+    <div class="w3-gray">
+      <div class="w3-container w3-center w3-padding w3-red" style="width:61%">61%</div>
     </div>
+    <br>
+    <p>EFRAIN ALEGRE</p>
+    <div class="w3-gray">
+      <div class="w3-container w3-center w3-padding w3-blue" style="width:38%">38%</div>
+    </div>
+  </div></p>
+</div>
+<br>
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-black w3-left-align"><i class="fa fa-bolt"></i> RELATÓRIOS</button>
+<div id="Demo2" class="w3-hide w3-container">
+    <p>Eleições Paraguai 2018 - Relatório 01</p>
+</div>    
+    
+    
+    
+    
+    
+    
 <hr>
     
     <div class="w3-container">
-      <h3><b>b i g </b><i class="fa fa-bolt"></i>D a i l y:
-      <b5>21/04/2018</h5>
+      <h3>21/04/2018:<h3>
+      <b5>Resultado previsto</h5>
       <br>
     <p>MARIO ABDO BENÍTEZ</p>
     <div class="w3-gray">
@@ -384,6 +421,28 @@
         defaults = defaults || ['Efraín Alegre', 'Mario Abdo Benítez'];
         setArticleSelectorDefaults(defaults);
       });
+      
+      
+      
+      <!-- PREVISÕES E RELATÓRIOS -->
+      
+      function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-black", "w3-yellow");
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-yellow", "w3-black");
+    }
+}
+      
+      
+      
+      
+      
     </script>
     <br>
 <br>
