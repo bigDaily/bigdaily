@@ -130,7 +130,7 @@ fevereiro de 1989.<br><br>
 o número total de eleitores inscritos e aptos ao voto foi de 4.260.816.
 &nbsp;&nbsp; A vitória de <b>Mario Abdo Benitez</b> foi confirmada em <b>23/04/20118</b> contando <b>46,44</b>%</p>    
     
-<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align"><i class="fa fa-bolt"></i> PREVISÕES</button>
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-yellow w3-left-align"><i class="fa fa-bolt"></i> PREVISÕES</button>
 <div id="Demo1" class="w3-hide w3-container">
     <p>  <div class="w3-container">
       <h3>21/04/2018:<h3>
@@ -148,7 +148,7 @@ o número total de eleitores inscritos e aptos ao voto foi de 4.260.816.
   </div></p>
 </div>
 <br>
-<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-black w3-left-align"><i class="fa fa-bolt"></i> RELATÓRIOS</button>
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-yellow w3-left-align"><i class="fa fa-bolt"></i> RELATÓRIOS</button>
 <div id="Demo2" class="w3-hide w3-container">
     <p>Eleições Paraguai 2018 - Relatório 01</p>
 </div>    
@@ -372,11 +372,11 @@ o número total de eleitores inscritos e aptos ao voto foi de 4.260.816.
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
         x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace("w3-yellow", "w3-black");
+        x.previousElementSibling.className.replace("w3-black", "w3-yellow");
     } else { 
         x.className = x.className.replace(" w3-show", "");
         x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace("w3-black", "w3-yellow");
+        x.previousElementSibling.className.replace("w3-yellow", "w3-black");
     }
 }
       
