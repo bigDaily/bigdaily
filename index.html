@@ -1,216 +1,321 @@
 <!DOCTYPE html>
 <html>
-<title>bigDaily</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
 </style>
 <body class="w3-light-grey">
-
-<!-- Top container -->
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4"><br>
-  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i> </button>
-  <span class="w3-bar-item w3-right"><b>b i g</b> <i class="fa fa-bolt"></i> D a i l y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-  <br>
-  <br>
-  <br>
+    
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Fechar</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+    
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w-bar w3-black w3-padding w3-card w3-wide">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">bigDaily</div>
+    <div class="w3-center w3-padding-16">Journal</div>
+  </div>
 </div>
-
-<br>
-<br>
-<br>
-<br>
-  
-  
-  <div class="w3-panel w3-yellow">
-    <h3>EDIFÍCIO WILTON PAES DE ALMEIDA</h3>
-    <p>Análise da hipótese de atentado. <a href="https://bigdaily.github.io/index/wiltonpaes">Veja relatório.</a></p>
-  </div>
-  
-<!-- INICIO DO CONTEÚDO -->
-<div class="w3-main" style="margin-left:300px;margin-top:43px;">
-  
-   <!-- Header -->
-  <header class="w3-container" style="padding-top:22px">
-    <br><h5><b>b i g </b><i class="fa fa-bolt"></i> D a i l y </h5></br>
-  </header>
-
-<div class="w3-row-padding w3-margin-bottom">
-    <div class="w3-quarter">
-      <a href="https://bigdaily.github.io/index/business/eletrobras" target="_blank">
-      <div class="w3-container w3-black w3-padding-16">
-        <div class="w3-left"><i class="fa fa-shopping-bag w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h6>Monitorando</h6>
-        </div>
-        <div class="w3-clear"></div>
-        </a>
-        <h4>ELETROBRÁS</h4>
-      </div>
-    </div>
-    
-  
-    <div class="w3-quarter">
-      <a href="https://bigdaily.github.io/index/politics/general_election_br" target="_blank">
-      <div class="w3-container w3-gray w3-padding-16">
-        <div class="w3-left"><i class="fa fa-bank w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h6>Monitorando</h6>
-        </div>
-        <div class="w3-clear"></div>
-        </a>
-        <h4>ELEIÇÕES BR18</h4>
-      </div>
-    </div>
-    
-    <div class="w3-quarter">
-      <a href="https://bigdaily.github.io/index/health/ilicit_drugs_br" target="_blank">
-      <div class="w3-container w3-black w3-text-white w3-padding-16">
-        <div class="w3-left"><i class="fa fa-hand-peace-o w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h6>Monitorando</h6>
-        </div>
-        <div class="w3-clear"></div>
-        </a>
-        <h4>DROGAS ILÍCITAS</h4>
-      </div>
-    </div>
-  </div>
-
-<!--- início linha 2 --->
-
- <div class="w3-row-padding w3-margin-bottom">
-    <div class="w3-quarter">
-      <a href="https://bigdaily.github.io/index/politics/general_elections_par" target="_blank">
-      <div class="w3-container w3-gray w3-padding-16">
-        <div class="w3-left"><i class="fa fa-bank w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h6>Concluído</h6>
-        </div>
-        <div class="w3-clear"></div>
-        </a>
-        <h4>ELEIÇÕES PAR18</h4>
-      </div>
-    </div>
-   
-    <div class="w3-quarter">
-      <a href="https://bigdaily.github.io/index/culture/contemporary_artists" target="_blank">
-      <div class="w3-container w3-black w3-padding-16">
-        <div class="w3-left"><i class="fa fa-bank w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h6>Concluído</h6>
-        </div>
-        <div class="w3-clear"></div>
-        </a>
-        <h4>ELEIÇÕES FRA17</h4>
-      </div>
-    </div>
-    
-    <div class="w3-quarter">
-      <a href="https://bigdaily.github.io/index/culture/contemporay_artists" target="_blank">
-      <div class="w3-container w3-gray w3-padding-16">
-        <div class="w3-left"><i class="fa fa-bank w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h6>Concluído</h6>
-        </div>
-        <div class="w3-clear"></div>
-        </a>
-        <h4>ELEIÇÕES USA16</h4>
-      </div>
-    </div>
-  </div>
-
-  <!--- início linha 3 --->
-
- <div class="w3-row-padding w3-margin-bottom">
-    <div class="w3-quarter">
-      <a href="https://bigdaily.github.io/index/business/commodities_br" target="_blank">
-      <div class="w3-container w3-black w3-padding-16">
-        <div class="w3-left"><i class="fa fa-shopping-bag w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h6>Monitorando</h6>
-        </div>
-        <div class="w3-clear"></div>
-        </a>
-        <h4>COMMODITIES BR</h4>
-      </div>
-    </div>
-   
-    <div class="w3-quarter">
-      <a href="https://bigdaily.github.io/index/culture/contemporary_artists" target="_blank">
-      <div class="w3-container w3-gray w3-padding-16">
-        <div class="w3-left"><i class="fa fa-paint-brush w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h6>Monitorando</h6>
-        </div>
-        <div class="w3-clear"></div>
-        </a>
-        <h4>ARTISTAS</h4>
-      </div>
-    </div>
-    
-    <div class="w3-quarter">
-      <a href="https://bigdaily.github.io/index/sports/soccer" target="_blank">
-      <div class="w3-container w3-black w3-text-white w3-padding-16">
-        <div class="w3-left"><i class="fa fa-soccer-ball-o w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h6>Monitorando</h6>
-        </div>
-        <div class="w3-clear"></div>
-        </a>
-        <h4>JOGADORES</h4>
-      </div>
-    </div>
-  </div>
-  
-  <br>
-
-<!--- início linha 2 --->
 
 <!-- !PAGE CONTENT! -->
-<br>
-<br>
-<br>
-  <!-- BOTÃO -->
- 
-    <button id="myButton" class="w3-button w3-dark-grey">Criar painel</button>
+  <div class="w3-display-container mySlides w3-hide-medium w3-hide-small">
+  <img src="https://bigdaily.github.io/index/img/teste02.png" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    <a href="https://google.com">Veja todas as previsões confirmadas.</a>
   </div>
-  <hr>
-    
-  
-  
-  <!-- Footer -->  
-  
-  <footer class="w3-container w3-padding w3-black">
-    <br>
-    <h4><b>b i g</b> <i class="fa fa-bolt"></i> D a i l y</h4>
-        <ul>
-          <li><a href="https://bigdaily.humhub.com/user/auth/login">Login</a></li>
-            <li><a href="https://bigdaily.github.io/index/understand" target="_blank">Entenda</a></li>
-            <li><a href="https://bigdaily.humhub.com" target="_blank">Colabore</a></li>
-            <li><a href="https://bigdaily.humhub.com" target="_blank">Doe</a></li>
-            <li><a href="https://bigdaily.github.io/index/sports/soccer" target="_blank">Relatório Privado</a></li>
-            </ul>
-    
-     </footer>
-
-  <!-- End page content -->
-  
 </div>
 
-<script>
+<div class="w3-display-container mySlides w3-hide-medium w3-hide-small">
+  <img src="img_lights.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Northern Lights, Norway
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black w3-hide-medium w3-hide-small" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black w3-hide-medium w3-hide-small" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://www.w3schools.com/w3images/woods.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>ELEIÇÕES MALÁSIA 2018</b></h3>
+      
+      <h4><b></b>Previsão bigDaily confirmada!</h4>
+    </div>
+
+    <div class="w3-container">
+      <p>No dia 08 de maio previmos que o resultado das eleições da Malásia seria a vitória de Mahathir Mohamed. Na data de hoje, foi confirmado o resultado. Acertamos mais uma vez! Esta é a nossa quarta previsão política presidencial correta. </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"> <span class="w3-opacity">9 de maio, 2018</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="https://www.w3schools.com/w3images/woods.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>1° DE MAIO</b></h3>
+      <h5><b></b>Colapso de edifício ocupado deixa marca histórica</b></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Edifício Wilton Paes de Almeida. </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><span class="w3-opacity">1 de maio, 2018</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
  
- document.getElementById("myButton").onclick = function () {
-        location.href = "https://bigdaily.github.io/index/custom";
-    };
-<!--- SCRIPT HERE --->
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding w3-center">
+      <h4>PAINÉIS DE ANÁLISE</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+       
+      <div class="w3-container w3-green w3-padding-16" style="width:50">
+        <div class="w3-center"><i class="fa fa-signal w3-xxxlarge"></i></div>
+        </div>
+<div class="w3-clear"></div>
+        <br>
+        <span class="w3-large"><b>Criar</b></span><br>
+        <span>Faça análises personalizadas</span>
+      </li>
+      
+      <li class="w3-padding-16">
+        <div class="w3-container w3-gray w3-padding-16" style="width:50">
+        <div class="w3-center"><i class="fa fa-users w3-xxxlarge"></i></div>
+        </div>
+        <br>
+        <span class="w3-large"><b>Eleições Brasil 2018</b></b></span><br>
+        <span>Compare os principais candidatos à presidência</span>
+      </li> 
+      
+      <li class="w3-padding-16">
+      <div class="w3-container w3-gray w3-padding-16" style="width:50">
+        <div class="w3-center"><i class="fa fa-shopping-bag w3-xxxlarge"></i></div>
+        </div>
+<div class="w3-clear"></div>
+        <br>
+        <span class="w3-large"><b>Negócios</b></b></span><br>
+        <span>Monitore o cenário econômico</span>
+      </li> 
+      
+      <li class="w3-padding-16">
+      <div class="w3-container w3-gray w3-padding-16" style="width:50">
+        <div class="w3-center"><i class="fa fa-heartbeat w3-xxxlarge"></i></div>
+        </div>
+<div class="w3-clear"></div>
+        <br>
+        <span class="w3-large"><b>Saúde</b></span><br>
+        <span>Veja indicadores de saúde pública</span>
+      </li> 
+      
+      
+      <li class="w3-padding-16">
+      <div class="w3-container w3-yellow w3-padding-16" style="width:50">
+        <div class="w3-center"><i class="fa fa-sitemap w3-xxxlarge"></i></div>
+        </div>
+<div class="w3-clear"></div>
+        <br>
+        <span class="w3-large"><b>Painéis bigDaily</b></span><br>
+        <span>Acesse todos os painéis</span>
+      </li> 
+      
+      
+      
+     
+    </ul>
+     <!-- Pagination -->
+  
+  </div>
+  </div>
+  
+  </div>
+  <hr> 
+  
+  </div>
+  
+  <hr id="about">
+  
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+
+  <!-- About Section -->
+  
+   <div class="w3-panel w3-black">
+    <p>bigDaily: A Plataforma</p>
+  </div>
+  <div class="w3-container w3-padding-32 w3-center">  
+    <div class="w3-padding-32">
+      <h4><b>Big Data para todos?</b></h4>
+      <h6><i>Sim, é uma necessidade. E uma tendência.</i></h6>
+      <p>Somos um portal de notícias orientadas por Big Data e dados em geral. Cada um de nossos artigos é uma análise independente de dados, realizada voluntariamente. Nosso objetivo é difundir o conceito de Big Data, e criar interfaces de análise intuitivas para usuários em geral. Nosso portal é alimentado pela Plataforma bigDaily, que integrará diversas fontes de Big Data, disponibilizando-as de forma gratuita e aberta. Nossa primeira integração é com o projeto <a href="https://en.wikipedia.org/wiki/Wikipedia:Pageview_statistics"> Wikipedia Pageviews Statistic</a>. <br> Conheça nossa plataforma e veja como pode ser simples realizar análises de Big Data.  </p>
+      
+      
+   <button class="w3-button w3-gray w3-mobile" onclick="document.getElementById('id01').style.display='block'">Seja Analista Independente</button> 
+
+<button class="w3-button w3-gray w3-mobile" onclick="document.getElementById('id02').style.display='block'">Show Panel</button> 
+
+<div id="id01" class="w3-panel w3-green w3-display-container" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-red w3-display-topright">x</span>
+  <p>Quero publicar análises</p>
+  <p>Clique aqui e saiba como</p>
+</div>
+
+<div id="id02" class="w3-panel w3-green w3-display-container" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-red w3-display-topright">x</span>
+  <p>Click on the X to close this panel.</p>
+  <p>Click on the X to close this panel.</p>
+</div>   
+      
+      </div>
+      
+      
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32 w3-black">
+    <div class="w3-third">
+      <h3><i class="fa fa-money w3-xxxlarge"></i></h3>
+      <h3>DOAR 1 REAL</h3>
+      <p>Somos voluntários. Assim garantimos isenção editorial e independência. Se você entende a importância deste trabalho, nos ajude doando R$1,00 por mês.</p>
+      <p>Somos uma <a href="https://www.google.com" target="_blank">marcaAberta</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>MÍDIAS SOCIAIS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <i class="fa fa-instagram w3-xxlarge"></i>
+          <span class="w3-large"> Siga-nos no instagram</span><br>
+         
+        </li>
+        <li class="w3-padding-16">
+          <i class="fa fa-twitter w3-xxlarge"></i>
+          <span class="w3-large"> Siga-nos no Twitter<span><br>
+          
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">big data</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">data</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">forecasts</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">elections</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">page view statistics</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">data analysis</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">data science</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">data driven news</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">bigDaily</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">data drived organizations</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">business</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">data drived journal</span>
+        
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
 
 
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
 </script>
 
-</body>
-</html>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+ 
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div>
+
+<!-- END w3-content -->
+</div>
